@@ -1,0 +1,79 @@
+{
+  "experiment": {
+    "name": "tracking_exp_celu_search",
+    "params": {
+      "seed": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "steps": [
+        "2400000"
+      ],
+      "buffer_size": [
+        "1",
+        "1000",
+        "100000"
+      ],
+      "batch_size": [
+        "1",
+        "4",
+        "8",
+        "16"
+      ],
+      "frequency": [
+        "30000"
+      ],
+      "non_linearity": [
+        "sigmoid"
+      ],
+      "network": [
+        "celu"
+      ],
+      "parameters": [
+        "5000", "10000", "20000"
+      ],
+      "density": [
+        "50"
+      ],
+      "step_size": [
+        "0.3",
+        "0.1",
+        "0.03",
+        "0.01"
+      ],
+      "optimizer": [
+        {
+          "sgd": {
+            "b1": [
+              "0.99"
+            ],
+            "b2": [
+              "0.99"
+            ],
+            "epsilon": [
+              "1e-8"
+            ]
+          }
+        }
+      ],
+      "input_vertices": [
+        "784"
+      ],
+      "lower": [
+        "-0.02"
+      ],
+      "higher": [
+        "0.02"
+      ],
+      "utility_trace": [
+        "0.999999"
+      ],
+      "samples": [
+        "60000"
+      ]
+    }
+  }
+}
